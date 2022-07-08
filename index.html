@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="./css/restaurant.css">
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.scrollme.min.js"></script>
     <script src="./js/restaurant.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <h1>
                 <a href="/">
@@ -24,32 +25,499 @@
             </h1>
             <nav>
                 <ul>
-                    <li>회사소개</li>
-                    <li>메뉴</li>
-                    <li>매장안내</li>
-                    <li>게시판</li>
-                    <li>고객센터</li>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">메뉴</a></li>
+                    <li><a href="">매장안내</a></li>
+                    <li><a href="">게시판</a></li>
+                    <li><a href="">고객센터</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="main_visual01">
-        <div class="main_slider01"></div>
-        <div class="main_slider02"></div>
-        <div class="main_slider03"></div>
+        <div class="main_visual01_slider">
+            <div class="main_slider01"></div>
+            <div class="main_slider02"></div>
+            <div class="main_slider03"></div>
+        </div>
     </section>
     <section class="main_visual02">
         <div class="container">
             <div class="main_visual02_slider">
-                <div class="itm01">
+                <div class="box">
+                    <div class="itm01"></div>
+                    <div class="information">
+                        <h2>Various Sauce</h2>
+                        <h3>6가지 소스</h3>
+                        <p>6가지 다양한 맛의 특제소스 제공
+                            <br />-허니겨자 소스
+                            <br />-마그마 고추장
+                            <br />-아로니아 솔트
+                            <br />-생 와사비
+                            <br />-마늘간장 딥소스
+                            <br />-땅콩 쌈장
+                        </p>
+                    </div>
                 </div>
-                <div class="itm02"></div>
-                <div class="itm03"></div>
-                <div class="itm04"></div>
+                <div class="box">
+                    <div class="itm02"></div>
+                    <div class="information">
+                        <h2>For Here To go</h2>
+                        <h3>인 앤 아웃 시스템</h3>
+                        <p>1인좌석을 기반으로한 홀 서비스
+                            <br />메인디쉬와 반찬의 개별 포장
+                            <br />육첩반상 직원들 직접 배달으로 배달비 X
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="itm03"></div>
+                    <div class="information">
+                        <h2>Personal Plating</h2>
+                        <h3>1인 플레이팅</h3>
+                        <p>고기를 양면 그릴로 구워내어 제공
+                            <br />여섯가지 반찬과 함께 푸짐한 1인 밥상
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="itm04"></div>
+                    <div class="information">
+                        <h2>Brand Market</h2>
+                        <h3>R&amp;D</h3>
+                        <p>육첩반상의 브랜드 전용 상품
+                            <br />여러 부위의 최상급 고기 온라인 판매
+                            <br />인기 밑반찬 개별 포장 판매
+                        </p>
+                    </div>
+                </div>
             </div>
-            <h2>BRAND IDENTITY</h2>
         </div>
     </section>
+    <section class="main_visual03">
+        <div class="container">
+            <div class="main_visual03_slider">
+                <h2>메뉴 소개</h2>
+                <h3>육첩반상의 다양한 메뉴를 즐겨보세요</h3>
+                <div class="slider_box">
+                    <div class="box_left">
+                        <div class="slider_nav">
+                            <div class="itm01">
+                                <img src="./img/section3_itm01-1.png" alt="">
+                                <strong>고기반상</strong>
+                            </div>
+                            <div class="itm02">
+                                <img src="./img/section3_itm02-1.png" alt="">
+                                <strong>찌개반상</strong>
+                            </div>
+                            <div class="itm03">
+                                <img src="./img/section3_itm03-1.png" alt="">
+                                <strong>냉면반상</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box_right">
+                        <div class="slider_main">
+                            <div class="itm01">
+                                <img src="./img/section3_itm01-2.png" alt="">
+                            </div>
+                            <div class="itm02">
+                                <img src="./img/section3_itm02-2.png" alt="">
+                            </div>
+                            <div class="itm03">
+                                <img src="./img/section3_itm03-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="main_visual04">
+        <div class="scrollme">
+            <div class="container">
+                <figure class="animateme" data-when="enter" data-from="1" data-to="0" data-opacity="0"
+                    data-translateX="-400">
+                    <img src="./img/section4_itm01.jpg" alt="">
+                    <strong>1인 메뉴가 되는 고깃집</strong>
+                    <p>다양한 메뉴 선택권
+                        <br />1인 정량화
+                        <br />혼밥 시설
+                    </p>
+                </figure>
+                <figure class="animateme" data-when="enter" data-from="1" data-to="0" data-opacity="0"
+                    data-translateX="400">
+                    <img src="./img/section4_itm02.jpg" alt="">
+                    <strong>패스트푸드 고깃집</strong>
+                    <p>셀프 주문 시스템
+                        <br />짧은 서빙시간
+                        <br />테이크 아웃
+                    </p>
+                </figure>
+                <figure class="animateme" data-when="enter" data-from="1" data-to="0" data-opacity="0"
+                    data-translateX="-400">
+                    <img src="./img/section4_itm03.jpg" alt="">
+                    <strong>동네 밥집같은 고깃집</strong>
+                    <p>가격 경쟁력
+                        <br />일상 메뉴화
+                        <br />한끼 식사
+                    </p>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="main_visual05">
+        <div class="container">
+            <div class="content">
+                <figure class="itm01">
+                    <img src="./img/section5_itm01.jpg" alt="">
+                    <strong>특수 조리기법과 노하우로
+                        <br />불쾌한 고기냄새를 잡았습니다.
+                    </strong>
+                </figure>
+                <figure class="itm02">
+                    <img src="./img/section5_itm02.jpg" alt="">
+                    <strong>더블로스팅 순간조리로
+                        <br />굽는수고와 시간을 덜었습니다.
+                    </strong>
+                </figure>
+                <figure class="itm03">
+                    <img src="./img/section5_itm03.jpg" alt="">
+                    <strong>혼자서도 편하게
+                        <br />고기를 먹을 수 있습니다.</strong>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="main_visual06">
+        <div class="container">
+            <h2>창업 지원 시스템</h2>
+            <p>성공하는 창업가로 성장하는 육첩반상의 창업 지원 시스템</p>
+            <div class="figurebox">
+                <figure>
+                    <a href="">
+                        <img src="./img/open.png" alt="">
+                        <strong>창업안내</strong>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="./img/chart.png" alt="">
+                        <strong>수익분석</strong>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="./img/idea.png" alt="">
+                        <strong>아이디어</strong>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="">
+                        <img src="./img/store.png" alt="">
+                        <strong>인테리어</strong>
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="main_visual07">
+        <div class="container">
+            <div class="left">
+                <ul class="tab_menu">
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">Q&amp;A</a></li>
+                </ul>
+                <div class="tab_content">
+                    <div class="on">
+                        <ul class="notice">
+                            <li>
+                                <a href="">
+                                    <strong>2021 4분기 신메뉴</strong>
+                                    <span>2021.10.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2021 3분기 신메뉴</strong>
+                                    <span>2021.07.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2021 2분기 신메뉴</strong>
+                                    <span>2021.04.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2021 1분기 신메뉴</strong>
+                                    <span>2021.01.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2020 4분기 신메뉴</strong>
+                                    <span>2021.10.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2020 3분기 신메뉴</strong>
+                                    <span>2021.07.01</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="event">
+                            <li>
+                                <a href="">
+                                    <strong>2021 4분기 이벤트</strong>
+                                    <span>2021.10.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2021 3분기 이벤트</strong>
+                                    <span>2021.07.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2021 2분기 이벤트</strong>
+                                    <span>2021.04.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2021 1분기 이벤트</strong>
+                                    <span>2021.01.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2020 4분기 이벤트</strong>
+                                    <span>2021.10.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2020 3분기 이벤트</strong>
+                                    <span>2021.07.01</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="QandA">
+                            <li>
+                                <a href="">
+                                    <strong>2021 4분기 Q&amp;A 종합</strong>
+                                    <span>2021.10.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2021 3분기 Q&amp;A 종합</strong>
+                                    <span>2021.07.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2021 2분기 Q&amp;A 종합</strong>
+                                    <span>2021.04.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2021 1분기 Q&amp;A 종합</strong>
+                                    <span>2021.01.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2020 4분기 Q&amp;A 종합</strong>
+                                    <span>2021.10.01</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <strong>2020 3분기 Q&amp;A 종합</strong>
+                                    <span>2021.07.01</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <ul class="right_notice">
+                    <li class="on">
+                        <a href="">
+                            <h2>2021 4분기 신메뉴</h2>
+                            <p>2021.10.01</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h2>2021 3분기 신메뉴</h2>
+                            <p>2021.07.01</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h2>2021 2분기 신메뉴</h2>
+                            <p>2021.04.01</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h2>2021 1분기 신메뉴</h2>
+                            <p>2021.01.01</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h2>2020 4분기 신메뉴</h2>
+                            <p>2021.10.01</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <h2>2020 3분기 신메뉴</h2>
+                            <p>2020.07.01</p>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="right_event">
+                        <li>
+                            <a href="">
+                                <h2>2021 4분기 이벤트</h2>
+                                <p>2021.10.01</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>2021 3분기 이벤트</h2>
+                                <p>2021.07.01</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>2021 2분기 이벤트</h2>
+                                <p>2021.04.01</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>2021 1분기 이벤트</h2>
+                                <p>2021.01.01</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>2020 4분기 이벤트</h2>
+                                <p>2021.10.01</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>2020 3분기 이벤트</h2>
+                                <p>2020.07.01</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="right_QandA">
+                        <li>
+                            <a href="">
+                                <h2>2021 4분기 Q&amp;A종합</h2>
+                                <p>2021.10.01</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>2021 3분기 Q&amp;A종합</h2>
+                                <p>2021.07.01</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>2021 2분기 Q&amp;A종합</h2>
+                                <p>2021.04.01</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>2021 1분기 Q&amp;A종합</h2>
+                                <p>2021.01.01</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>2020 4분기 Q&amp;A종합</h2>
+                                <p>2021.10.01</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h2>2020 3분기 Q&amp;A종합</h2>
+                                <p>2020.07.01</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="top">
+            <div class="container">
+                <h1>
+                    <a href="">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">문의하기</a></li>
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">채용정보</a></li>
+                    <li><a href="">사이트맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <ul>
+                    <li>상호 : (주) 대세에프앤비</li>
+                    <li>대표이사 : 김준혁</li>
+                    <li>사업자등록번호 : 707-88-00152</li>
+                    <li>주소 : 서울특별시 구로구 디지털로 34길 43, 505호(코오롱싸이언스밸리 1차)</li>
+                </ul>
+                <div class="sns">
+                    <a href=""><i class="xi-instagram"></i></a>
+                    <a href=""><i class="xi-facebook"></i></a>
+                    <a href=""><i class="xi-kakaotalk"></i></a>
+                </div>
+                <div class="family_link">
+                    <select id="fl">
+                        <option value=" ">family link</option>
+                        <option value=" ">instagram</option>
+                        <option value=" ">facebook</option>
+                        <option value=" ">kakaotalk</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
